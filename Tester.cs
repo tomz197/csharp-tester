@@ -34,7 +34,6 @@ namespace tester
             if (IsDictionary(expected))
             {
                 throw new ArgumentException("For testing Distionaries use `TestDictionary` method");
-
             }
 
             string expectedStr = JsonSerializer.Serialize(expected);
@@ -52,7 +51,7 @@ namespace tester
 
         private bool IsDictionary<T>(T val)
         {
-            return val.GetType().IsGenericType && val.GetType().GetGenericTypeDefinition() == typeof(Dictionary<,>);
+            return val != null && val.GetType().IsGenericType && val.GetType().GetGenericTypeDefinition() == typeof(Dictionary<,>);
         }
 
         private void PrintWrongResult(Action printExpected, Action printActual)
