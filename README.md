@@ -4,7 +4,7 @@ Simple class for c# testing
 
 ## Usage
 
-1. Copy the `Tester.cs` file to your project
+1. Copy the [Tester.cs](/Tester.cs) file to your project
 2. Update namespace to suit your project
 3. Create a new instance of the `Tester` class
 4. Test your code
@@ -12,7 +12,7 @@ Simple class for c# testing
 
 ## Example
 
-> [!NOTE]
+> [!IMPORTANT]
 > Testing dictionaries is not supported by the `Test` method. Use the `TestDictionary` method instead.
 
 ```csharp
@@ -73,6 +73,9 @@ namespace csharp_tester
 ```
 
 ## Output
+
+> [!NOTE]
+> `Test passed.` is printed in green and errors in red.
 
 ```
 Running tests for My tester...
