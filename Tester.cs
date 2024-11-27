@@ -31,7 +31,7 @@ namespace tester
 
         public void Test<T>(T expected, T actual)
         {
-            if (expected != null && IsDictionary(expected))
+            if (IsDictionary(expected))
             {
                 throw new ArgumentException("For testing Distionaries use `TestDictionary` method");
             }
@@ -51,7 +51,7 @@ namespace tester
 
         private bool IsDictionary<T>(T val)
         {
-            return val.GetType().IsGenericType && val.GetType().GetGenericTypeDefinition() == typeof(Dictionary<,>);
+            return val != null && val.GetType().IsGenericType && val.GetType().GetGenericTypeDefinition() == typeof(Dictionary<,>);
         }
 
         private void PrintWrongResult(Action printExpected, Action printActual)
