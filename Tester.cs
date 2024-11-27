@@ -31,10 +31,9 @@ namespace tester
 
         public void Test<T>(T expected, T actual)
         {
-            if (IsDictionary(expected))
+            if (expected != null && IsDictionary(expected))
             {
                 throw new ArgumentException("For testing Distionaries use `TestDictionary` method");
-
             }
 
             string expectedStr = JsonSerializer.Serialize(expected);
