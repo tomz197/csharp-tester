@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace tester
+namespace Tester
 {
     class Program
     {

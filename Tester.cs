@@ -2,9 +2,9 @@ using System;
 using System.Text.Json;
 using System.Collections.Generic;
 
-namespace tester
+namespace Tester
 {
-    class Tester
+    public class Tester
     {
         public Tester(string name, bool printSuccess = true)
         {
