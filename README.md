@@ -77,25 +77,5 @@ namespace csharp_tester
 > [!NOTE]
 > `Test passed.` is printed in green and errors in red.
 
-```
-Running tests for My tester...
-Test passed.
-Test passed.
-Test passed.
-Test passed.
-Test failed:
-Expected:
-2
-Actual:
-3
-Stack trace:
-   at System.Environment.get_StackTrace()
-   at tester.Tester.PrintWrongResult(Action printExpected, Action printActual) in /csharp-tester/Tester.cs:line 67
-   at tester.Tester.Test[T](T expected, T actual) in /csharp-tester/Tester.cs:line 46
-   at tester.Examples.Readme1() in /csharp-tester/Examples.cs:line 125
-   at tester.Program.Main(String[] args) in /csharp-tester/Program.cs:line 12
-Results for My tester:
- Passed: 4
- Failed: 1
-```
+![image](https://github.com/user-attachments/assets/91818a0a-555d-4078-994d-b8a0aca20d36)
 
